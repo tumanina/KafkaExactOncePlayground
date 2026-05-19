@@ -1,5 +1,14 @@
 # KafkaExactOncePlayground
 
+## AtLeastOnce - Outbox transaction
+
+<img width="450" height="400" alt="image" src="https://github.com/user-attachments/assets/bd0b4e75-3f76-4d4b-ba78-f5412c4921e6" />
+
+
+
+
+## How to run
+
 How to run Kafka from docker
 
 `docker run -d -p 9092:9092 --name my-broker apache/kafka:latest`
