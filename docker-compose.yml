@@ -1,0 +1,13 @@
+services:
+  usersapi:
+    image: ${DOCKER_REGISTRY-}usersapi
+    build:
+      context: .
+      dockerfile: UsersApi/Dockerfile
+    depends_on: 
+      - kafka
+  kafka:
+    image: apache/kafka:latest
+    container_name: kafka
+    ports:
+      - '9092:9092'
