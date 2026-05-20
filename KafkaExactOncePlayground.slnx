@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+  <Project Path="Users.Database/Users.Database.csproj" Id="3ab19c3e-2b77-4291-88d3-61ca8c638c38" />
+  <Project Path="UsersApi/UsersApi.csproj" />
+</Solution>
