@@ -2,6 +2,7 @@
   <Project Path="docker-compose.dcproj">
     <Build />
   </Project>
+  <Project Path="OutboxEventsProcessor/OutboxEventsProcessor.csproj" Id="ca3e3b01-5a13-48c1-8bab-520bc746bd16" />
   <Project Path="Users.Database/Users.Database.csproj" Id="3ab19c3e-2b77-4291-88d3-61ca8c638c38" />
   <Project Path="UsersApi/UsersApi.csproj" />
 </Solution>

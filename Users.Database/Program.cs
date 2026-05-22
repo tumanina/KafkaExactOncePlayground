@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Users.Database;
 
-var connectionString = "Host=localhost;Port=5432;Database=usersdb;Username=postgres;Password=playgroundpass";
+var connectionString = "Host=localhost;Port=5432;Database=usersdatabase;Username=postgres;Password=playgroundpass";
 var builder = new DbContextOptionsBuilder<DbContext>();
 
 builder.EnableSensitiveDataLogging()

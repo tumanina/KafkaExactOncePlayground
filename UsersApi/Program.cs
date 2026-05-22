@@ -11,7 +11,7 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
-var connectionString = "Host=localhost;Port=5432;Database=usersdb;Username=postgres;Password=playgroundpass";
+var connectionString = "Host=localhost;Port=5432;Database=usersdatabase;Username=postgres;Password=playgroundpass";
 builder.Services
     .AddDbContext<UsersContext>(options => options.UseNpgsql(connectionString));
 
