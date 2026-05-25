@@ -1,9 +1,20 @@
 # KafkaExactOncePlayground
 
+
+<img width="741" height="317" alt="image" src="https://github.com/user-attachments/assets/0b108e5b-2c2a-431e-8b54-d38e1f94ebf5" />
+
+
 ## AtLeastOnce - Outbox transaction
 
-<img width="450" height="400" alt="image" src="https://github.com/user-attachments/assets/bd0b4e75-3f76-4d4b-ba78-f5412c4921e6" />
+- Should contain eventId as idempotencyKey
+- Should have version of event
+- CorrelationId for tracing
+- Cleaner to remove "old" events in database
 
+## AtMostOnce - Inbox transaction
+
+- Events should be idempotent base on IdempotencyKey: check in logic or make property Unique.
+- Listener should be single or block rows of table that in process
 
 
 
@@ -22,7 +33,8 @@ Run producer
 `./kafka-console-producer.sh --bootstrap-server localhost:9092 --topic test-topic`
 
 Send message from shell
-<img width="1342" height="371" alt="image" src="https://github.com/user-attachments/assets/5bb9ffef-62ce-4ff8-92a4-3a29ae17ad32" />
+
+<img width="671" height="170" alt="image" src="https://github.com/user-attachments/assets/5bb9ffef-62ce-4ff8-92a4-3a29ae17ad32" />
 
 
 UI
@@ -32,18 +44,18 @@ https://marketplace.visualstudio.com/items?itemName=Aiven.aiven-kafkaui-vscode-e
 
 How to connect
 
-<img width="1895" height="798" alt="image" src="https://github.com/user-attachments/assets/2a432c92-e979-400c-bf1f-ee0d60f8dc1b" />
+<img width="950" height="400" alt="image" src="https://github.com/user-attachments/assets/2a432c92-e979-400c-bf1f-ee0d60f8dc1b" />
 
 Topics
 
-<img width="1901" height="701" alt="image" src="https://github.com/user-attachments/assets/9d0220f9-5ac9-4b59-8e8b-786562743645" />
+<img width="950" height="350" alt="image" src="https://github.com/user-attachments/assets/9d0220f9-5ac9-4b59-8e8b-786562743645" />
 
 Produce message(s)
 
-<img width="1897" height="909" alt="image" src="https://github.com/user-attachments/assets/3cc04a01-ef5e-4bcc-a99e-24ecf32e3507" />
+<img width="950" height="450" alt="image" src="https://github.com/user-attachments/assets/3cc04a01-ef5e-4bcc-a99e-24ecf32e3507" />
 
 Consume message(s)
 
-<img width="1889" height="879" alt="image" src="https://github.com/user-attachments/assets/c7bd5e01-f41b-4190-b6b5-7020e86b5d08" />
+<img width="950" height="440" alt="image" src="https://github.com/user-attachments/assets/c7bd5e01-f41b-4190-b6b5-7020e86b5d08" />
 
 
