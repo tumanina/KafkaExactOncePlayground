@@ -4,14 +4,14 @@
 <img width="741" height="317" alt="image" src="https://github.com/user-attachments/assets/0b108e5b-2c2a-431e-8b54-d38e1f94ebf5" />
 
 
-## AtLeastOnce - Outbox transaction
+## AtLeastOnce - Transactional Outbox
 
 - Should contain eventId as idempotencyKey
 - Should have version of event
 - CorrelationId for tracing
 - Cleaner to remove "old" events in database
 
-## AtMostOnce - Inbox transaction
+## AtMostOnce - Transactional Inbox 
 
 - Events should be idempotent base on IdempotencyKey: check in logic or make property Unique.
 - Listener should be single or block rows of table that in process
