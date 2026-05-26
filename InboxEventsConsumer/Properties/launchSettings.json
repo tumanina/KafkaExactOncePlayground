@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "InboxEventsConsumer": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

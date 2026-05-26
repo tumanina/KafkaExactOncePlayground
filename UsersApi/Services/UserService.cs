@@ -30,7 +30,7 @@ namespace UsersApi.Services
                 { 
                     Id = Guid.NewGuid(), 
                     CorrelationId = Guid.NewGuid(),
-                    EventType = EventType.UserCreated,
+                    EventType = "user_created",
                     Version = 1,
                     Payload = JsonConvert.SerializeObject(user)
                 };

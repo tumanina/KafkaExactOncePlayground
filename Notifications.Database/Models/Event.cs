@@ -1,4 +1,4 @@
-﻿namespace Users.Database.Models;
+﻿namespace Notifications.Database.Models;
 
 public class Event
 {
