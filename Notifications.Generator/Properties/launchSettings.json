@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Notifications.Generator": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
