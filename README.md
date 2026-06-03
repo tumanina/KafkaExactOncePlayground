@@ -6,15 +6,17 @@
 
 ## AtLeastOnce - Transactional Outbox
 
-- Should contain eventId as idempotencyKey
+- Should contain eventId as IdempotencyKey
 - Should have version of event
 - CorrelationId for tracing
 - Cleaner to remove "old" events in database
+- Good to have partion per agrregation root (UserId in this case)
 
 ## AtMostOnce - Transactional Inbox 
 
 - Events should be idempotent base on IdempotencyKey: check in logic or make property Unique.
-- Listener should be single or block rows of table that in process
+- Listener should be single (by Mutex for example) or block rows of table that in process
+- Event should be deserialized base on version
 
 
 
