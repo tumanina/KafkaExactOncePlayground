@@ -1,5 +1,10 @@
 # KafkaExactOncePlayground
 
+In distributed systems, achieving true exactly-once message processing is challenging because network failures, service crashes, and retries can cause messages to be delivered never or more than once. A common issue is the dual-write problem, where a service updates its database successfully but fails to publish the corresponding event, leaving the system in an inconsistent state. 
+
+The Outbox and Inbox patterns address these challenges by ensuring reliable event delivery and idempotent processing, providing effectively-once semantics from a business perspective.
+
+
 
 <img width="741" height="317" alt="image" src="https://github.com/user-attachments/assets/0b108e5b-2c2a-431e-8b54-d38e1f94ebf5" />
 
